@@ -3,7 +3,7 @@ require_relative '../solver'
 describe Solver do
   solver = Solver.new
   context 'Test method factorial' do
-    it 'Check if the return is an Integer' do
+    it 'Check if the method always returns an Integer' do
       expect(solver.factorial(5)).to be_an_instance_of(Integer)
     end
     it 'Returns factorial of a 5' do
@@ -30,29 +30,29 @@ describe Solver do
     it 'Check if the return is an String' do
       expect(solver.reverse('abc')).to be_an_instance_of(String)
     end
-    it 'Reverse simple word' do
+    it 'Reverse the word "abc"' do
       expect(solver.reverse('abc')).to eq('cba')
     end
-    it 'Reverse simple word part 2' do
+    it 'Reverse the word "aaa"' do
       expect(solver.reverse('aaa')).to eq('aaa')
     end
-    it 'Reverse word' do
+    it 'Reverse the word "banana"' do
       expect(solver.reverse('banana')).to eq('ananab')
     end
-    it 'Reverse word part 2' do
+    it 'Reverse a case sensitive word' do
       expect(solver.reverse('CaSeSeNsItIvE')).to eq('EvItIsNeSeSaC')
     end
   end
 
   context 'Test fizzbuzz method' do
+    it 'Check if the method always returns a String' do
+      expect(solver.fizzbuzz(3)).to be_an_instance_of(String)
+    end
     it 'Pass 3 to it and get fizz' do
       expect(solver.fizzbuzz(3)).to eq('fizz')
     end
     it 'Pass 6 to it and get fizz' do
       expect(solver.fizzbuzz(6)).to eq('fizz')
-    end
-    it 'Pass 9 to it and get fizz' do
-      expect(solver.fizzbuzz(9)).to eq('fizz')
     end
     it 'Pass 5 to it and get buzz' do
       expect(solver.fizzbuzz(5)).to eq('buzz')
