@@ -57,5 +57,8 @@ describe Solver do
     it 'Pass 5 to it and get buzz' do
       expect(solver.fizzbuzz(5)).to eq('buzz')
     end
+    it 'Pass 7 to it and get buzz' do
+      expect(solver.fizzbuzz(7)).to eq('7')
+    end
   end
 end

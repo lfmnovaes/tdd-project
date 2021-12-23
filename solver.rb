@@ -16,8 +16,10 @@ class Solver
   def fizzbuzz(number)
     if number%3 == 0
       'fizz'
-    else
+    elsif number%5 == 0
       'buzz'
+    else
+      '7'
     end
   end
 end
