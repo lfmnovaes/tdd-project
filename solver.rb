@@ -13,7 +13,11 @@ class Solver
     str.reverse
   end
 
-  def fizzbuzz(_number)
-    'fizz'
+  def fizzbuzz(number)
+    if number%3 == 0
+      'fizz'
+    else
+      'buzz'
+    end
   end
 end

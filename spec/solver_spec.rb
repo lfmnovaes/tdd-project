@@ -54,5 +54,8 @@ describe Solver do
     it 'Pass 9 to it and get fizz' do
       expect(solver.fizzbuzz(9)).to eq('fizz')
     end
+    it 'Pass 5 to it and get buzz' do
+      expect(solver.fizzbuzz(5)).to eq('buzz')
+    end
   end
 end
