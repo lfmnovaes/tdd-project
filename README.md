@@ -15,7 +15,8 @@ Ruby >= 3.0.0
    git clone https://github.com/lfmnovaes/tdd-project.git
    ```
 - Go to the cloned directory with `cd tdd-project`
-- With Ruby installed in your environment, you can run `ruby factorial.rb` to see some tests going on with the code
+- With Ruby installed in your environment,  run `gem install rspec` 
+- Use `rspec` to see some the tests implemented
 
 ## Authors
 
