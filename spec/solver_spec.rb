@@ -45,8 +45,14 @@ describe Solver do
   end
 
   context 'Test fizzbuzz method' do
-    it 'Pass fizz to it' do
+    it 'Pass 3 to it and get fizz' do
       expect(solver.fizzbuzz(3)).to eq('fizz')
+    end
+    it 'Pass 6 to it and get fizz' do
+      expect(solver.fizzbuzz(6)).to eq('fizz')
+    end
+    it 'Pass 9 to it and get fizz' do
+      expect(solver.fizzbuzz(9)).to eq('fizz')
     end
   end
 end
