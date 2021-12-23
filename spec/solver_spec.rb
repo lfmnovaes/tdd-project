@@ -72,5 +72,8 @@ describe Solver do
     it 'Pass -15 to it and get "fizzbuzz" ' do
       expect(solver.fizzbuzz(-15)).to eq('fizzbuzz')
     end
+    it 'Pass 0 to it and get "0" ' do
+      expect(solver.fizzbuzz(0)).to eq('0')
+    end
   end
 end
