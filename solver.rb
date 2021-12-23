@@ -1,5 +1,5 @@
 class Solver
   def hw
-    "hello world"
+    'hello world'
   end
 end
