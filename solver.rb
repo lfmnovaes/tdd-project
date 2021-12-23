@@ -19,7 +19,7 @@ class Solver
     elsif number%5 == 0
       'buzz'
     else
-      '7'
+      number.to_s
     end
   end
 end

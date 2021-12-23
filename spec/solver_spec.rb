@@ -57,8 +57,14 @@ describe Solver do
     it 'Pass 5 to it and get buzz' do
       expect(solver.fizzbuzz(5)).to eq('buzz')
     end
-    it 'Pass 7 to it and get buzz' do
+    it 'Pass 7 to it and get "7" ' do
       expect(solver.fizzbuzz(7)).to eq('7')
+    end
+    it 'Pass 8 to it and get "8" ' do
+      expect(solver.fizzbuzz(8)).to eq('8')
+    end
+    it 'Pass 11 to it and get "11" ' do
+      expect(solver.fizzbuzz(11)).to eq('11')
     end
   end
 end
