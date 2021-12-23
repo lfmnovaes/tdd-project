@@ -1,6 +1,8 @@
 class Solver
   def factorial(number)
-    if number <= 1
+    raise Exception, 'Negative number is not allowed' if number.negative?
+
+    if [0, 1].include?(number)
       1
     else
       number * factorial(number - 1)
