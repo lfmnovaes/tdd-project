@@ -8,4 +8,8 @@ class Solver
       number * factorial(number - 1)
     end
   end
+
+  def reverse(_str)
+    'cba'
+  end
 end

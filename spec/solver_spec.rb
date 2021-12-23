@@ -25,4 +25,10 @@ describe Solver do
       expect(solver.factorial(10)).to eq(3_628_800)
     end
   end
+
+  context 'Test reverse method' do
+    it 'Reverse simple word' do
+      expect(solver.reverse('abc')).to eq('cba')
+    end
+  end
 end
