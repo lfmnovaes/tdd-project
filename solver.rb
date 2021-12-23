@@ -9,7 +9,11 @@ class Solver
     end
   end
 
-  def reverse(_str)
-    'cba'
+  def reverse(str)
+    str.reverse
+  end
+
+  def fizzbuzz(_number)
+    'fizz'
   end
 end

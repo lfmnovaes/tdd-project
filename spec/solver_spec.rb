@@ -27,8 +27,26 @@ describe Solver do
   end
 
   context 'Test reverse method' do
+    it 'Check if the return is an String' do
+      expect(solver.reverse('abc')).to be_an_instance_of(String)
+    end
     it 'Reverse simple word' do
       expect(solver.reverse('abc')).to eq('cba')
+    end
+    it 'Reverse simple word part 2' do
+      expect(solver.reverse('aaa')).to eq('aaa')
+    end
+    it 'Reverse word' do
+      expect(solver.reverse('banana')).to eq('ananab')
+    end
+    it 'Reverse word part 2' do
+      expect(solver.reverse('CaSeSeNsItIvE')).to eq('EvItIsNeSeSaC')
+    end
+  end
+
+  context 'Test fizzbuzz method' do
+    it 'Pass fizz to it' do
+      expect(solver.fizzbuzz(3)).to eq('fizz')
     end
   end
 end
