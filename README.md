@@ -16,7 +16,7 @@ Ruby >= 3.0.0
    ```
 - Go to the cloned directory with `cd tdd-project`
 - With Ruby installed in your environment,  run `gem install rspec` 
-- Use `rspec` to see some the tests implemented
+- Use `rspec` in the terminal to see the tests implemented
 
 ## Authors
 
