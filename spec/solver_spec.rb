@@ -66,5 +66,11 @@ describe Solver do
     it 'Pass 11 to it and get "11" ' do
       expect(solver.fizzbuzz(11)).to eq('11')
     end
+    it 'Pass 15 to it and get "fizzbuzz" ' do
+      expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+    end
+    it 'Pass -15 to it and get "fizzbuzz" ' do
+      expect(solver.fizzbuzz(-15)).to eq('fizzbuzz')
+    end
   end
 end
